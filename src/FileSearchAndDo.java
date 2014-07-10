@@ -16,7 +16,7 @@ public class FileSearchAndDo {
 	public static final String CMD_REPLACE = "-r";
 	public static final String CMD_DELETE = "-d";
 	public static final String CMD_COPY = "-c";
-
+ 
 	
 	public static void usage() {
 		System.out.println("\n 이 프로그램은 파일명을 변경할 때 사용합니다.");
