@@ -8,8 +8,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * MP3 ÆÄÀÏÀÇ ÆÄÀÏ¸íÀ» ½±°Ô º¯°æ ÇÏ±â À§ÇÏ¿© ¸¸µé¾ú½À´Ï´Ù.
- * Regular Expression À» ÀÌ¿ëÇÏ¿´½À´Ï´Ù.
+ * MP3 íŒŒì¼ì˜ íŒŒì¼ëª…ì„ ì‰½ê²Œ ë³€ê²½ í•˜ê¸° ìœ„í•˜ì—¬ ë§Œë“¤ì—ˆìŠµë‹ˆë‹¤.
+ * Regular Expression ì„ ì´ìš©í•˜ì˜€ìŠµë‹ˆë‹¤.
  * 
  * @author jzero2
  * Created on 2006. 1. 10

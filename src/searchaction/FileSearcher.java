@@ -5,8 +5,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * ÆÄÀÏ¸íÀ» Ã£Àº ´ÙÀ½ Æ¯Á¤ ÀÛ¾÷À» ½ÇÇàÇÕ´Ï´Ù. 
- * Regular Expression À» ÀÌ¿ëÇÏ¿´½À´Ï´Ù.
+ * íŒŒì¼ëª…ì„ ì°¾ì€ ë‹¤ìŒ íŠ¹ì • ì‘ì—…ì„ ì‹¤í–‰í•©ë‹ˆë‹¤. 
+ * Regular Expression ì„ ì´ìš©í•˜ì˜€ìŠµë‹ˆë‹¤.
  * 
  * @author jzero2
  * Created on 2006. 1. 10
@@ -40,8 +40,8 @@ public class FileSearcher {
 		checkNull();
 		
 		if (searchFile.isDirectory()) {
-			//Directory µµ °Ë»öÇØ¾ß ÇÏ°í Á¶°Ç¿¡ ¸Â´Â´Ù¸é ÇØ´ç Action 
-			//Directory ´Â °Ë»öÇÏÁö ¾Ê±â·Î ÇÏÀÚ..
+			//Directory ë„ ê²€ìƒ‰í•´ì•¼ í•˜ê³  ì¡°ê±´ì— ë§ëŠ”ë‹¤ë©´ í•´ë‹¹ Action 
+			//Directory ëŠ” ê²€ìƒ‰í•˜ì§€ ì•Šê¸°ë¡œ í•˜ì..
 			File[] fList = searchFile.listFiles();
 			for (int i = 0; i < fList.length; i++) {
 				File f = fList[i];

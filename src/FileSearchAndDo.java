@@ -5,7 +5,7 @@ import java.io.File;
 import searchaction.*;
 
 /*
- * Á¤±Ô½ÄÀ» »ç¿ëÇÏ¿© ÆÄÀÏÀ» Ã£°Å³ª º¯°æ½ÃÅ°±â À§ÇØ »ç¿ë.
+ * ì •ê·œì‹ì„ ì‚¬ìš©í•˜ì—¬ íŒŒì¼ì„ ì°¾ê±°ë‚˜ ë³€ê²½ì‹œí‚¤ê¸° ìœ„í•´ ì‚¬ìš©.
  * 
  * Created on 2006. 1. 10
  * jzero2 test 
@@ -19,8 +19,8 @@ public class FileSearchAndDo {
  
 	
 	public static void usage() {
-		System.out.println("\n ÀÌ ÇÁ·Î±×·¥Àº ÆÄÀÏ¸íÀ» º¯°æÇÒ ¶§ »ç¿ëÇÕ´Ï´Ù.");
-		System.out.println("() ¸¦ ÀÌ¿ëÇØ ±×·ìÈ­ ÇÏ°í ^¼ø¹ø À» ÀÌ¿ëÇÏ¿© ÆÄÀÏ¸íÀ» º¯°æÇÕ´Ï´Ù.\n ");
+		System.out.println("\n ì´ í”„ë¡œê·¸ë¨ì€ íŒŒì¼ëª…ì„ ë³€ê²½í•  ë•Œ ì‚¬ìš©í•©ë‹ˆë‹¤.");
+		System.out.println("() ë¥¼ ì´ìš©í•´ ê·¸ë£¹í™” í•˜ê³  ^ìˆœë²ˆ ì„ ì´ìš©í•˜ì—¬ íŒŒì¼ëª…ì„ ë³€ê²½í•©ë‹ˆë‹¤.\n ");
 		System.out
 				.println("[usage]FileSearchAndDo [command] [path] [Regular Expressions] [replace String]");
 		System.out.println("");
@@ -34,16 +34,16 @@ public class FileSearchAndDo {
 		System.out.println("[ex]FileSearchAndDo -r D:\\Music\\628 (\\d{3}\\ )(.*)(\\ \\-\\ )(.*)\\.mp3 ^2^3^4.mp3");
 		System.out.println("[ex]FileSearchAndDo -d /WRB2B/Log 2005.*\\.log");
 
-		System.out.println("\n -- Á¤±Ô½Ä ¿¹Á¦ --\n");
+		System.out.println("\n -- ì •ê·œì‹ ì˜ˆì œ --\n");
 		System.out.println("\t. 	char 1");
 		System.out.println("\t\\ 	escape");
 		System.out.println("\t+ 	>=1");
 		System.out.println("\t* 	>=0");
 		System.out.println("\ta[1-3] a1~a3");
 		System.out.println("\ta[13]  a1 or a3");
-		System.out.println("\ta[^1]  a1 Á¦¿ÜÇÑ ³ª¸ÓÁö");
-		System.out.println("\t^ ½ÃÀÛ");
-		System.out.println("\t$ ³¡");
+		System.out.println("\ta[^1]  a1 ì œì™¸í•œ ë‚˜ë¨¸ì§€");
+		System.out.println("\t^ ì‹œì‘");
+		System.out.println("\t$ ë");
 	}
 	
 	
@@ -67,9 +67,9 @@ public class FileSearchAndDo {
 	/**
 	 * 
 	 * @param args[0] : command
-	 * @param args[1] : Ã£¾Æ¾ß ÇÒ °æ·Î
-	 * @param args[2] : °Ë»ö ÆĞÅÏ
-	 * @param args[3] : command °¡ -r ÀÏ °æ¿ì º¯°æµÉ ÆĞÅÏ
+	 * @param args[1] : ì°¾ì•„ì•¼ í•  ê²½ë¡œ
+	 * @param args[2] : ê²€ìƒ‰ íŒ¨í„´
+	 * @param args[3] : command ê°€ -r ì¼ ê²½ìš° ë³€ê²½ë  íŒ¨í„´
 	 *  	
 	 */
 	public static void main(String[] args) {
@@ -97,7 +97,7 @@ public class FileSearchAndDo {
 		int count = 0;
 		try { count = fnm.doProc(); } catch (Exception e) { e.printStackTrace(); }
 		
-		System.out.println(count + " °ÇÀÇ ÆÄÀÏÀÌ Ã³¸®µÇ¾ú½À´Ï´Ù.");
+		System.out.println(count + " ê±´ì˜ íŒŒì¼ì´ ì²˜ë¦¬ë˜ì—ˆìŠµë‹ˆë‹¤.");
 	}
 
 	
