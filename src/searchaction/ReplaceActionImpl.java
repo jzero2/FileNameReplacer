@@ -17,7 +17,7 @@ import java.util.regex.Pattern;
 public class ReplaceActionImpl implements FileAction {
 
 	private String replaceStr = null;
-	private final String REPLACE_PREFIX_CHAR = "\\^";
+	private final String REPLACE_PREFIX_CHAR = "\\\\";
 	private final String REPLACE_FIND_INDEX = "\\d{1}";
 	
 	public ReplaceActionImpl() { }

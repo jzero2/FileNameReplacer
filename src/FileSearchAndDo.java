@@ -20,7 +20,7 @@ public class FileSearchAndDo {
 	
 	public static void usage() {
 		System.out.println("\n 이 프로그램은 파일명을 변경할 때 사용합니다.");
-		System.out.println("() 를 이용해 그룹화 하고 ^순번 을 이용하여 파일명을 변경합니다.\n ");
+		System.out.println("() 를 이용해 그룹화 하고 \\괄호의순번 을 이용하여 파일명을 변경합니다.\n ");
 		System.out
 				.println("[usage]FileSearchAndDo [command] [path] [Regular Expressions] [replace String]");
 		System.out.println("");
@@ -31,7 +31,7 @@ public class FileSearchAndDo {
 		//		.println("[command copy ] -c filename length replaceFrom replaceTo unique");
 		System.out.println("");
 		System.out.println("[ex]FileSearchAndDo -s /WRB2B/Log 2005.*");
-		System.out.println("[ex]FileSearchAndDo -r D:\\Music\\628 (\\d{3}\\ )(.*)(\\ \\-\\ )(.*)\\.mp3 ^2^3^4.mp3");
+		System.out.println("[ex]FileSearchAndDo -r D:\\Music\\628 (\\d{3}\\ )(.*)(\\ \\-\\ )(.*)\\.mp3 \\2\\3\\4.mp3");
 		System.out.println("[ex]FileSearchAndDo -d /WRB2B/Log 2005.*\\.log");
 
 		System.out.println("\n -- 정규식 예제 --\n");
@@ -76,17 +76,13 @@ public class FileSearchAndDo {
 
 		if (args.length < 3) {
 			usage();
-			//System.exit(1);
+			System.exit(1);
 			
 			args = new String[4]; 
 			args[0] = "-s";
 			//args[1] = "D:\\Music\\628";
-			args[1] = "D:\\BNSWorks\\workspace\\SmartWallet_Server\\SmartWallet_DBIF5";
 			//args[2] = "(\\d{3}\\ )(.*)(\\ \\-\\ )(.*)\\.mp3";
-			//args[2] = "(\\w\\d\\d\\-)(.*)(\\-)(.*)\\.mp3";
-			args[2] = "\\.svn";
-			args[3] = "^2^3^4.mp3";
-			//args[3] = "^2 ^3 ^4.mp3";
+			//args[3] = "\\2\\3\\4.mp3";
 		} 
 		
 		FileSearcher fnm = new FileSearcher();
